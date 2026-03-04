@@ -715,3 +715,76 @@ body.page {
     height: 72px;
   }
 }
+.tourney {
+  padding: 14px 0 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.tourney:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.tourney__title {
+  margin: 0 0 8px 0;
+  font-size: clamp(18px, 2.2vw, 26px);
+  line-height: 1.15;
+  letter-spacing: 0.2px;
+}
+
+.tourney__meta {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.78);
+  letter-spacing: 0.3px;
+  margin: 0 0 12px 0;
+}
+
+.tourney__image {
+  width: 100%;
+  height: 260px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02));
+}
+
+.tourney__image--indianwells {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/indianwells.jpg");
+}
+
+.tourney__image--miami {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/miami.jpg");
+}
+
+.tourney__image--roland {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/roland.jpg");
+}
+
+.tourney__desc {
+  margin: 12px 0 0 0;
+  max-width: 85ch;
+  line-height: 1.6;
+  color: rgba(233, 238, 252, 0.86);
+}
+
+@media (max-width: 900px) {
+  .tourney__image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tourney__image {
+    height: 190px;
+  }
+}
