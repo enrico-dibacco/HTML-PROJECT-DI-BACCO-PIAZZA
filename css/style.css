@@ -1,10 +1,9 @@
-
 * { 
-    box-sizing: border-box; 
+  box-sizing: border-box; 
 }
 /*lo so che mi stai guardando*/
 html, body { 
-    height: 100%;
+  height: 100%;
 }
 
 body.page {
@@ -14,19 +13,18 @@ body.page {
   color: #e9eefc;
 }
 
-.header {
+.topbar {
   position: sticky;
   top: 0;
-  z-index: 10;
-  background: rgba(11, 15, 25, 0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 20;
+  background: #0a1b5a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.header__inner {
+.topbar__inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 12px 16px;
+  padding: 10px 16px;
 
   display: flex;
   align-items: center;
@@ -34,29 +32,103 @@ body.page {
   gap: 12px;
 }
 
-.header__logo {
-  color: #e9eefc;
+.topbar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
-  font-weight: 800;
-  letter-spacing: 0.3px;
-  padding: 10px 12px;
-  border-radius: 10px;
+  color: #ffffff;
 }
 
-.header__logo:hover {
-  background: rgba(255, 255, 255, 0.06);
+.topbar__brandMark {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.topbar__brandText {
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.topbar__link {
+  color: rgba(255, 255, 255, 0.86);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.topbar__link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.topbar__link--cta {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.topbar__sep {
+  width: 1px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.header {
+  position: sticky;
+  top: 56px; 
+  z-index: 10;
+
+  background: rgba(255, 255, 255, 0.94);
+  color: #0b0f19;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(10px);
+}
+
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .header__link {
-  color: rgba(233, 238, 252, 0.80);
+  color: rgba(11, 15, 25, 0.78);
   text-decoration: none;
-  font-weight: 650;
+  font-weight: 800;
+  font-size: 14px;
 
   padding: 10px 12px;
   border-radius: 10px;
@@ -66,15 +138,52 @@ body.page {
 }
 
 .header__link:hover {
-  color: #e9eefc;
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.10);
+  color: #0b0f19;
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.10);
 }
 
 .header__link--active {
   color: #0b0f19;
-  background: #54d68a;
+  background: rgba(84, 214, 138, 0.25);
   border-color: rgba(84, 214, 138, 0.65);
+}
+
+.header__tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__iconBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #0b0f19;
+
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  transition: background 160ms ease, border-color 160ms ease, transform 120ms ease;
+}
+
+.header__iconBtn:hover {
+  background: rgba(0, 0, 0, 0.07);
+  border-color: rgba(0, 0, 0, 0.14);
+}
+
+.header__iconBtn:active {
+  transform: translateY(1px);
+}
+
+.header__icon {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
 }
 
 
@@ -85,7 +194,120 @@ body.page {
   min-height: calc(100vh - 64px); 
 }
 
+.hero {
+  padding: 28px 0;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: center;
+
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hero__title {
+  margin: 0 0 10px 0;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.08;
+  letter-spacing: 0.2px;
+}
+
+.hero__subtitle {
+  margin: 0 0 18px 0;
+  max-width: 62ch;
+  color: rgba(233, 238, 252, 0.82);
+  line-height: 1.55;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  transition: transform 120ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button--primary {
+  background: #54d68a;
+  color: #0b0f19;
+  border-color: rgba(84, 214, 138, 0.65);
+}
+
+.button--primary:hover {
+  background: #63e39a;
+}
+
+.button--ghost {
+  background: rgba(255, 255, 255, 0.05);
+  color: #e9eefc;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.button--ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.hero__media {
+  width: 100%;
+}
+
+.hero__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background-image: url("../assets/wimbledon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar__right {
+    gap: 8px;
+  }
+  .topbar__sep {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
+  .header {
+    top: 56px;
+  }
+
   .header__inner {
     flex-direction: column;
     align-items: stretch;
@@ -98,5 +320,9 @@ body.page {
   .header__link {
     flex: 1;
     text-align: center;
+  }
+
+  .header__tools {
+    justify-content: flex-end;
   }
 }
