@@ -280,7 +280,7 @@ body.page {
   aspect-ratio: 4 / 3;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  background-image: url("../assets/tennis-court.jpg");
+  background-image: url("../assets/frontimage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ body.page {
   min-height: 330px;
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0.08)),
-    url("../assets/tennis-team.jpg");
+    url("../assets/medvedev.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -390,7 +390,7 @@ body.page {
   height: 120px;
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/tennis-thumb-a.jpg");
+    url("../assets/paolini.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -399,13 +399,13 @@ body.page {
 .newsCard__thumb--b {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/tennis-thumb-b.jpg");
+    url("../assets/cobolli.jpg");
 }
 
 .newsCard__thumb--c {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/tennis-thumb-c.jpg");
+    url("../assets/indian.jpg");
 }
 
 .newsCard__body {
@@ -514,7 +514,7 @@ body.page {
   height: 84px;
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/player-a.jpg");
+    url("../assets/alcaraz.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -522,19 +522,19 @@ body.page {
 .miniCard__avatar--b {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/player-b.jpg");
+    url("../assets/sinner.jpg");
 }
 
 .miniCard__avatar--c {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/player-c.jpg");
+    url("../assets/djokovic.jpg");
 }
 
 .miniCard__avatar--d {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/player-d.jpg");
+    url("../assets/zverev.jpg");
 }
 
 .miniCard__content {
@@ -588,7 +588,7 @@ body.page {
   height: 140px;
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/tourney-a.jpg");
+    url("../assets/indianwells.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -596,13 +596,13 @@ body.page {
 .tourneyCard__banner--b {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/tourney-b.jpg");
+    url("../assets/miami.jpg");
 }
 
 .tourneyCard__banner--c {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/tourney-c.jpg");
+    url("../assets/roland.jpg");
 }
 
 .tourneyCard__body {
