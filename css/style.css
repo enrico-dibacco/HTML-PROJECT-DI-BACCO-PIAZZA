@@ -788,3 +788,100 @@ body.page {
     height: 190px;
   }
 }
+
+.scoreboardIntro {
+  margin: 6px 0 14px 0;
+}
+
+.scoreboardIntro__text {
+  margin: 0;
+  color: rgba(233, 238, 252, 0.82);
+  line-height: 1.6;
+  max-width: 90ch;
+}
+
+.tableWrap {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rankTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.rankTable__th,
+.rankTable__td {
+  padding: 14px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  vertical-align: middle;
+}
+
+.rankTable__th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  color: rgba(233, 238, 252, 0.86);
+  background: rgba(10, 27, 90, 0.35);
+}
+
+.rankTable__th--num,
+.rankTable__td--num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.rankTable__th--rank,
+.rankTable__td--rank {
+  width: 70px;
+  text-align: right;
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.90);
+}
+
+.rankTable__row:nth-child(even) .rankTable__td {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.rankTable__row:hover .rankTable__td {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.rankTable__name {
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.95);
+}
+
+.cc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  min-width: 38px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(233, 238, 252, 0.90);
+}
+
+.cc--ita { border-color: rgba(84, 214, 138, 0.35); }
+.cc--esp { border-color: rgba(214, 186, 84, 0.35); }
+.cc--srb { border-color: rgba(84, 149, 214, 0.35); }
+.cc--ger { border-color: rgba(170, 84, 214, 0.35); }
+.cc--aus { border-color: rgba(255, 255, 255, 0.22); }
+
+@media (max-width: 900px) {
+  .tableWrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
