@@ -1,7 +1,7 @@
 * { 
   box-sizing: border-box; 
 }
-/*lo so che mi stai guardando*/
+
 html, body { 
   height: 100%;
 }
@@ -93,7 +93,6 @@ body.page {
   height: 22px;
   background: rgba(255, 255, 255, 0.22);
 }
-
 
 .header {
   position: sticky;
@@ -187,14 +186,12 @@ body.page {
   line-height: 1;
 }
 
-
 .main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 24px 16px;
   min-height: calc(100vh - 64px); 
 }
-
 
 .hero {
   padding: 28px 0;
@@ -289,7 +286,6 @@ body.page {
   background-repeat: no-repeat;
 }
 
-
 .news {
   padding: 6px 0 30px 0;
 }
@@ -330,7 +326,6 @@ body.page {
   gap: 12px;
 }
 
-
 .newsCard {
   border-radius: 14px;
   overflow: hidden;
@@ -368,7 +363,6 @@ body.page {
   color: rgba(233, 238, 252, 0.70);
   font-weight: 800;
 }
-
 
 .newsCard--featured {
   position: relative;
@@ -423,6 +417,227 @@ body.page {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.section {
+  padding: 8px 0 30px 0;
+}
+
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 8px 0 12px 0;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.section__more {
+  color: rgba(233, 238, 252, 0.80);
+  text-decoration: none;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 10px;
+  border-radius: 12px;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.section__more:hover {
+  color: #e9eefc;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.cardGrid {
+  display: grid;
+  gap: 12px;
+}
+
+.cardGrid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cardGrid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  background: rgba(84, 214, 138, 0.18);
+  border: 1px solid rgba(84, 214, 138, 0.45);
+  color: rgba(233, 238, 252, 0.92);
+}
+
+.pill--blue {
+  background: rgba(84, 149, 214, 0.18);
+  border-color: rgba(84, 149, 214, 0.45);
+}
+
+.pill--purple {
+  background: rgba(170, 84, 214, 0.18);
+  border-color: rgba(170, 84, 214, 0.45);
+}
+
+.pill--gold {
+  background: rgba(214, 186, 84, 0.18);
+  border-color: rgba(214, 186, 84, 0.45);
+}
+
+.miniCard {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.miniCard__link {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.miniCard__avatar {
+  width: 84px;
+  height: 84px;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/player-a.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.miniCard__avatar--b {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/player-b.jpg");
+}
+
+.miniCard__avatar--c {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/player-c.jpg");
+}
+
+.miniCard__avatar--d {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/player-d.jpg");
+}
+
+.miniCard__content {
+  padding: 12px 12px 14px 0;
+}
+
+.miniCard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.miniCard__rank {
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.86);
+}
+
+.miniCard__title {
+  margin: 8px 0 8px 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.miniCard__meta {
+  font-size: 12px;
+  color: rgba(233, 238, 252, 0.70);
+  font-weight: 800;
+}
+
+.miniCard:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tourneyCard {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tourneyCard__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.tourneyCard__banner {
+  height: 140px;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tourney-a.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tourneyCard__banner--b {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tourney-b.jpg");
+}
+
+.tourneyCard__banner--c {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tourney-c.jpg");
+}
+
+.tourneyCard__body {
+  padding: 12px 12px 14px 12px;
+}
+
+.tourneyCard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tourneyCard__date {
+  font-size: 12px;
+  color: rgba(233, 238, 252, 0.76);
+  font-weight: 900;
+}
+
+.tourneyCard__title {
+  margin: 10px 0 8px 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.tourneyCard__meta {
+  font-size: 12px;
+  color: rgba(233, 238, 252, 0.70);
+  font-weight: 800;
+}
+
+.tourneyCard:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
 
 @media (max-width: 1100px) {
   .newsGrid {
@@ -430,6 +645,12 @@ body.page {
   }
   .newsCard:nth-child(4) {
     display: none;
+  }
+  .cardGrid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardGrid--3 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -478,5 +699,19 @@ body.page {
 
   .header__tools {
     justify-content: flex-end;
+  }
+
+  .cardGrid--4,
+  .cardGrid--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .miniCard__link {
+    grid-template-columns: 72px 1fr;
+  }
+
+  .miniCard__avatar {
+    width: 72px;
+    height: 72px;
   }
 }
