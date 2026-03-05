@@ -1,0 +1,149 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+
+  transition: transform 120ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button--primary {
+  background: #54d68a;
+  color: #0b0f19;
+  border-color: rgba(84, 214, 138, 0.65);
+}
+
+.button--primary:hover {
+  background: #63e39a;
+}
+
+.button--ghost {
+  background: rgba(255, 255, 255, 0.05);
+  color: #e9eefc;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.button--ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  background: rgba(84, 214, 138, 0.18);
+  border: 1px solid rgba(84, 214, 138, 0.45);
+  color: rgba(233, 238, 252, 0.92);
+}
+
+.pill--blue {
+  background: rgba(84, 149, 214, 0.18);
+  border-color: rgba(84, 149, 214, 0.45);
+}
+
+.pill--purple {
+  background: rgba(170, 84, 214, 0.18);
+  border-color: rgba(170, 84, 214, 0.45);
+}
+
+.pill--gold {
+  background: rgba(214, 186, 84, 0.18);
+  border-color: rgba(214, 186, 84, 0.45);
+}
+
+.tableWrap {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rankTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.rankTable__th,
+.rankTable__td {
+  padding: 14px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  vertical-align: middle;
+}
+
+.rankTable__th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  color: rgba(233, 238, 252, 0.86);
+  background: rgba(10, 27, 90, 0.35);
+}
+
+.rankTable__th--num,
+.rankTable__td--num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.rankTable__th--rank,
+.rankTable__td--rank {
+  width: 70px;
+  text-align: right;
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.90);
+}
+
+.rankTable__row:nth-child(even) .rankTable__td {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.rankTable__row:hover .rankTable__td {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.rankTable__name {
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.95);
+}
+
+.cc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  min-width: 38px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  margin-right: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(233, 238, 252, 0.90);
+}
+
+.cc--ita { border-color: rgba(84, 214, 138, 0.35); }
+.cc--esp { border-color: rgba(214, 186, 84, 0.35); }
+.cc--srb { border-color: rgba(84, 149, 214, 0.35); }
+.cc--ger { border-color: rgba(170, 84, 214, 0.35); }
+.cc--aus { border-color: rgba(255, 255, 255, 0.22); }

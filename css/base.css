@@ -1,0 +1,14 @@
+* { 
+  box-sizing: border-box; 
+}
+
+html, body { 
+  height: 100%;
+}
+
+body.page {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: #0b0f19;
+  color: #e9eefc;
+}

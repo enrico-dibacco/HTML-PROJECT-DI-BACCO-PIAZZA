@@ -1,0 +1,491 @@
+.hero {
+  padding: 28px 0;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: center;
+
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hero__title {
+  margin: 0 0 10px 0;
+  font-size: clamp(28px, 3.2vw, 44px);
+  line-height: 1.08;
+  letter-spacing: 0.2px;
+}
+
+.hero__subtitle {
+  margin: 0 0 18px 0;
+  max-width: 62ch;
+  color: rgba(233, 238, 252, 0.82);
+  line-height: 1.55;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero__media {
+  width: 100%;
+}
+
+.hero__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background-image: url("../assets/frontimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* news component styles moved from main.css */
+.news {
+  /* same vertical spacing as generic .section for consistent look */
+  padding: 8px 0 30px 0;
+}
+
+.news__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 8px 0 12px 0;
+}
+
+.news__title {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.news__more {
+  color: rgba(233, 238, 252, 0.80);
+  text-decoration: none;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 10px;
+  border-radius: 12px;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.news__more:hover {
+  color: #e9eefc;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.newsCard {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.newsCard__link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.newsCard__kicker {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  color: rgba(84, 214, 138, 0.95);
+}
+
+.newsCard__headline {
+  margin: 8px 0 10px 0;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.newsCard__headline--small {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.newsCard__meta {
+  font-size: 12px;
+  color: rgba(233, 238, 252, 0.70);
+  font-weight: 800;
+}
+
+.newsCard--featured {
+  position: relative;
+  min-height: 330px;
+}
+
+.newsCard__media {
+  height: 100%;
+  min-height: 330px;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0.08)),
+    url("../assets/medvedev.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.newsCard__overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 14px 14px 16px 14px;
+}
+
+.newsCard__thumb {
+  height: 120px;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/paolini.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.newsCard__thumb--b {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/cobolli.jpg");
+}
+
+.newsCard__thumb--c {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/indian.jpg");
+}
+
+.newsCard__body {
+  padding: 12px 12px 14px 12px;
+}
+
+.newsCard:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.section {
+  padding: 8px 0 30px 0;
+}
+
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 8px 0 12px 0;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.section__more {
+  color: rgba(233, 238, 252, 0.80);
+  text-decoration: none;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 10px;
+  border-radius: 12px;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.section__more:hover {
+  color: #e9eefc;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.cardGrid {
+  display: grid;
+  gap: 12px;
+}
+
+.cardGrid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cardGrid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.miniCard {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.miniCard__link {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.miniCard__avatar {
+  width: 84px;
+  height: 84px;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/players/alcaraz.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.miniCard__avatar--b {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/players/sinner.jpg");
+}
+
+.miniCard__avatar--c {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/players/djokovic.jpg");
+}
+
+.miniCard__avatar--d {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/players/zverev.jpg");
+}
+
+.miniCard__content {
+  padding: 12px 12px 14px 0;
+}
+
+.miniCard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.miniCard__rank {
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.86);
+}
+
+.miniCard__title {
+  margin: 8px 0 8px 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.miniCard__meta {
+  font-size: 12px;
+  color: rgba(233, 238, 252, 0.70);
+  font-weight: 800;
+}
+
+.miniCard:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tourneyCard {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tourneyCard__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.tourneyCard__banner {
+  height: 140px;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/indianwells.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tourneyCard__banner--b {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/miami.jpg");
+}
+
+.tourneyCard__banner--c {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/rolandgarros.jpg");
+}
+
+.tourneyCard__body {
+  padding: 12px 12px 14px 12px;
+}
+
+.tourneyCard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tourneyCard__date {
+  font-size: 12px;
+  color: rgba(233, 238, 252, 0.76);
+  font-weight: 900;
+}
+
+.tourneyCard__title {
+  margin: 10px 0 8px 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.tourneyCard__meta {
+  font-size: 12px;
+  color: rgba(233, 238, 252, 0.70);
+  font-weight: 800;
+}
+
+.tourneyCard:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tourney {
+  padding: 14px 0 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.tourney:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.tourney__title {
+  margin: 0 0 8px 0;
+  font-size: clamp(18px, 2.2vw, 26px);
+  line-height: 1.15;
+  letter-spacing: 0.2px;
+}
+
+.tourney__meta {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(233, 238, 252, 0.78);
+  letter-spacing: 0.3px;
+  margin: 0 0 12px 0;
+}
+
+.tourney__image {
+  width: 100%;
+  height: 260px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02));
+}
+
+.tourney__image--australianopen {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/australianopen.png");
+}
+
+.tourney__image--indianwells {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/indianwells.jpg");
+}
+
+.tourney__image--miami {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/miami.jpg");
+}
+
+.tourney__image--montecarlo {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/montecarlo.webp");
+}
+
+.tourney__image--madrid {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/madrid.jpg");
+}
+
+.tourney__image--rome {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/rome.jpg");
+}
+
+.tourney__image--rolandgarros {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/rolandgarros.jpg");
+}
+
+.tourney__image--wimbledon {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/wimbledon.jpg");
+}
+
+.tourney__image--usopen {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/usopen.jpg");
+}
+
+.tourney__image--atpfinals {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/atpfinals.jpg");
+}
+
+.tourney__desc {
+  margin: 12px 0 0 0;
+  width: 100%;
+  line-height: 1.6;
+  color: rgba(233, 238, 252, 0.86);
+}
+
+.scoreboardIntro {
+  margin: 6px 0 14px 0;
+}
+
+.scoreboardIntro__text {
+  margin: 0;
+  color: rgba(233, 238, 252, 0.82);
+  line-height: 1.6;
+  max-width: 90ch;
+}
