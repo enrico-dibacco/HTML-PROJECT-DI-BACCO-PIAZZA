@@ -147,3 +147,26 @@
 .cc--srb { border-color: rgba(84, 149, 214, 0.35); }
 .cc--ger { border-color: rgba(170, 84, 214, 0.35); }
 .cc--aus { border-color: rgba(255, 255, 255, 0.22); }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  background-color: rgba(10, 27, 90, 0.9); /* stesso blu della topbar */
+  color: #ffffff;
+  border: none;
+  border-radius: 12px; /* come topbar__brandMark */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  display: none; /* nascosto finché non scrolli */
+  z-index: 50;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#scrollTopBtn:hover {
+  background-color: rgba(10, 27, 90, 1); /* leggermente più pieno */
+  transform: translateY(-2px);
+}

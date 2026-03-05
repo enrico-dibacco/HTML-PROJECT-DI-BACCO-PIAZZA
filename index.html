@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDBTennis</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets\logo.png" type="image/png">
 </head>
 
 <body class="page">
@@ -235,6 +236,23 @@
             </div>
         </section>
     </main>
+
+    <button id="scrollTopBtn" aria-label="Torna su">
+     ↑
+    </button>
+    <script>
+        const scrollBtn = document.getElementById('scrollTopBtn');
+
+        // Mostra il pulsante dopo 100px di scroll
+        window.onscroll = () => {
+        scrollBtn.style.display = (document.documentElement.scrollTop > 100) ? 'block' : 'none';
+        };
+
+        // Scroll lento verso l'alto
+        scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script> 
 </body>
 
 </html>

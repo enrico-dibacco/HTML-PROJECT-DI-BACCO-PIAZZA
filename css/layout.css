@@ -1,10 +1,8 @@
 .main {
   max-width: 1200px;
-
   margin: 0 auto;
-  /* 112px top padding reserved for fixed topbar + header, plus 24px bottom, 16px sides */
-  padding: 136px 16px 24px;
-  min-height: calc(100vh - 112px);
+  padding: calc(56px + 56px) 16px 24px; /* topbar + header */
+  min-height: calc(100vh - (56px + 56px));
 }
 
 .topbar {
