@@ -1,5 +1,6 @@
 .main {
   max-width: 1200px;
+
   margin: 0 auto;
   /* 112px top padding reserved for fixed topbar + header, plus 24px bottom, 16px sides */
   padding: 136px 16px 24px;
@@ -123,7 +124,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;      /* non andare a capo */
+  overflow-x: auto;       /* se non ci sta, scroll */
+  -webkit-overflow-scrolling: touch;
 }
 
 .header__link {
