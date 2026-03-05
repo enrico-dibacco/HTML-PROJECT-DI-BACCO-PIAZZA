@@ -243,12 +243,10 @@
     <script>
         const scrollBtn = document.getElementById('scrollTopBtn');
 
-        // Mostra il pulsante dopo 100px di scroll
         window.onscroll = () => {
         scrollBtn.style.display = (document.documentElement.scrollTop > 100) ? 'block' : 'none';
         };
 
-        // Scroll lento verso l'alto
         scrollBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         });

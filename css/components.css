@@ -155,18 +155,18 @@
   width: 48px;
   height: 48px;
   font-size: 24px;
-  background-color: rgba(10, 27, 90, 0.9); /* stesso blu della topbar */
+  background-color: rgba(10, 27, 90, 0.9);
   color: #ffffff;
   border: none;
-  border-radius: 12px; /* come topbar__brandMark */
+  border-radius: 12px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  display: none; /* nascosto finché non scrolli */
+  display: none; 
   z-index: 50;
   transition: background-color 0.2s, transform 0.2s;
 }
 
 #scrollTopBtn:hover {
-  background-color: rgba(10, 27, 90, 1); /* leggermente più pieno */
+  background-color: rgba(10, 27, 90, 1);
   transform: translateY(-2px);
 }

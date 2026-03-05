@@ -1,12 +1,4 @@
-/* master stylesheet that combines the splitted files */
-
-/* base & components first */
 @import url('base.css');
 @import url('components.css');
-
-/* modules provide default appearance for page sections */
 @import url('modules.css');
-
-/* layout contains responsive tweaks and structural overrides,
-   so it must come last to take precedence */
 @import url('layout.css');
