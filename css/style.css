@@ -752,27 +752,69 @@ body.page {
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02));
 }
 
+.tourney__image--australianopen {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/australianopen.png");
+}
+
 .tourney__image--indianwells {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/indianwells.jpg");
+    url("../assets/tournaments/indianwells.jpg");
 }
 
 .tourney__image--miami {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/miami.jpg");
+    url("../assets/tournaments/miami.jpg");
 }
 
-.tourney__image--roland {
+.tourney__image--montecarlo {
   background-image:
     linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
-    url("../assets/roland.jpg");
+    url("../assets/tournaments/montecarlo.webp");
+}
+
+.tourney__image--madrid {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/madrid.jpg");
+}
+
+.tourney__image--rome {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/rome.jpg");
+}
+
+.tourney__image--rolandgarros {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/rolandgarros.jpg");
+}
+
+.tourney__image--wimbledon {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/wimbledon.jpg");
+}
+
+.tourney__image--usopen {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/usopen.jpg");
+}
+
+.tourney__image--atpfinals {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.02)),
+    url("../assets/tournaments/atpfinals.jpg");
 }
 
 .tourney__desc {
   margin: 12px 0 0 0;
-  max-width: 85ch;
+  width: 100%;
   line-height: 1.6;
   color: rgba(233, 238, 252, 0.86);
 }
